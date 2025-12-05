@@ -49,7 +49,7 @@ redisClient.connect().catch((err) => {
 
 // Routes
 app.get('/', (req, res) => {
-    res.send('Welcome to Express Server1!');
+    res.send('Welcome to Express Server 2!');
 });
 
 app.get('/api/status', (req, res) => {
