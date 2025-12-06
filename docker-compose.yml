@@ -1,6 +1,7 @@
 services:
   node-app:
     container_name: express-node-app-container
+    image: khaled2299/docker-ex
     build: .
     ports:
       - "4000:4000"
