@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const redis = require('redis');
+const os = require('os');
 
 const app = express();
 
@@ -50,6 +51,7 @@ redisClient.connect().catch((err) => {
 // Routes
 app.get('/', (req, res) => {
     res.send('Welcome to Dockerhub, new change 111111111111!');
+    console.log(`comming from ${os.hostname()}`);
 });
 
 app.get('/api/status', (req, res) => {
