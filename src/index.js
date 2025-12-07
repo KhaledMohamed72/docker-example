@@ -49,7 +49,7 @@ redisClient.connect().catch((err) => {
 
 // Routes
 app.get('/', (req, res) => {
-    res.send('Welcome to Dockerhub!');
+    res.send('Welcome to Dockerhub, new change!');
 });
 
 app.get('/api/status', (req, res) => {
